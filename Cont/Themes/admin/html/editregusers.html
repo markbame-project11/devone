@@ -1,0 +1,86 @@
+  <form class="form-horizontal" action = "{URL}/mbadmin/Update" method = "post" id="userform">
+  <fieldset>
+   <legend>Edit</legend>
+    <div class="form-group">
+      <label for="" class="col-lg-2 control-label">User Name</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="username" value="{username}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="button" class="btn btn-warning col-lg-offset-6" id="changepassword">Change Password</button>
+    </div>
+     <div class="form-group" id ="passwordholder">
+    </div>
+    <div class="form-group">
+      <label for="" class="col-lg-2 control-label">First Name</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="firstname" value="{firstname}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="" class="col-lg-2 control-label">Last Name</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="lastname" value="{lastname}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="" class="col-lg-2 control-label">User Category</label>
+      <div class="col-lg-6">
+        <select class="form-control" name = "usercategory">
+            <option value = "{usercategory}" selected>{usercategory}</option>
+            <option value = "admin">admin</option>
+            <option value = "subscriber" >subscriber</option>
+          </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-6">
+        <input type="email" class="form-control" name="email" value="{email}" >
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label for="select" class="col-lg-2 control-label">Activated</label>
+        <div class="col-lg-6">
+          <select class="form-control" id="select" name = "activated" value = {activated}>
+            <option value = "{activated}" selected>{activated}</option>
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+          </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="select" class="col-lg-2 control-label">Confirmed</label>
+        <div class="col-lg-6">
+          <select class="form-control" id="select" name = "confirmed" value ={confirmed}>
+            <option value = "{confirmed}">{confirmed}</option>
+            <option value = "0">0</option>
+            <option value = "1" >1</option>
+          </select>
+      </div>
+    </div>
+
+    
+
+    <div class="form-group">
+     
+          <input type="hidden" class="form-control" name="id" value="{id}">
+          <input type="hidden" class="form-control" name="method" value="{method}">
+     
+    </div>
+
+     <div class="form-group">
+      <div class="col-lg-60 col-lg-offset-6">
+        <a class="btn btn-default" href="{URL}/mbadmin/{method}">Cancel</a>
+        <button type="submit" class="btn btn-primary" id="submitgen">Save</button>
+      </div>
+    </div>
+  </fieldset>
+</form>

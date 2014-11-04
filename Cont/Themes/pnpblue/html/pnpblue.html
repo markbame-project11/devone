@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+		<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-5">
+		<META name="keywords" content="corporate,guidelines,cataloging">	
+		<META name="date" content="1994-11-06T08:49:37+00:00">
+		<TITLE>{TITLE}</TITLE>
+			<link rel="icon" type="image/png" href="{URL}/Cont/Themes/admin/images/favicon.ico" />
+			<LINK href="{URL}/Cont/Themes/pnpblue/css/bootstrap/booswatch.css" rel="stylesheet" type="text/css">
+			<LINK href="{URL}/Cont/Themes/pnpblue/css/style.css" rel="stylesheet" type="text/css">
+			<LINK href="{URL}/Cont/Themes/pnpblue/css/camera.css" rel="stylesheet" type="text/css">
+			<SCRIPT  src ="{URL}/Cont/Themes/pnpblue/js/jq.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/pnpblue/js/jquery.min.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/pnpblue/js/js.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/pnpblue/js/jquery.mobile.customized.min.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/pnpblue/js/jquery.easing.1.3.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/pnpblue/js/bootstrap.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/pnpblue/js/camera.min.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+	    <div id = "mywrap" style="width:1200px;margin:0 auto;">
+	    	<div id="contholder">
+	    		<div class = "banner">
+	    			<img class = "radius-2" src="{URL}/Lib/upload/Uploads/gallery/banner/{BANNERIMG}">
+	    		</div>
+		    	<div class="navbar navbar-inverse">
+					  <div class="navbar-header">
+					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					    </button>
+					    <a class="navbar-brand" href="{URL}/">Home</a>
+					  </div>
+					  <div class="navbar-collapse collapse navbar-responsive-collapse">
+					    <ul class="nav navbar-nav">
+					      {NAVLINKS}	
+					        
+					    </ul>
+					    
+					    <ul class="nav navbar-nav navbar-right">
+					      <li class="dropdown">
+					        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+					        <ul class="dropdown-menu">
+					         {DROPMENU}
+					        </ul>
+					      </li>
+					    </ul>
+					    <ul class="nav navbar-nav navbar-right" style="margin-right:0px">
+					    	<li >
+					      	<a id="currdate" ></a>
+					      </li>    
+					    </ul>
+					  </div>
+					</div>
+
+				<div id="cont" style="float:left;width:900px;padding:25px;margin-top:-20px" class="radius-2">
+					{CONTENT}
+
+				</div>
+		    	<div id = "rightmenu">
+		    		{LOGIN}
+		    		{RD}
+		    		{RIGHTIMAGES}
+		    		<div class ="visits">
+		    			TOTAL VISITS
+		    		</div>
+		    		<div class ="visits" style="margin-top:5px">
+		    			{VISITS}
+		    		</div>
+				</div>
+				<h6 class="text-muted">powered by pinoyitprogramsph.com</h6>
+	    	</div>
+	    </div>
+    </BODY>
+</HTML>

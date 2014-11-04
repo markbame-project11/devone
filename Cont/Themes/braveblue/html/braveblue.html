@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+		<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-5">
+		<META name="keywords" content="corporate,guidelines,cataloging">	
+		<META name="date" content="1994-11-06T08:49:37+00:00">
+		<TITLE>{TITLE}</TITLE>
+			<link rel="icon" type="image/png" href="{URL}" />
+			<LINK href="{URL}/Cont/Themes/braveblue/css/bootstrap/booswatch.css" rel="stylesheet" type="text/css">
+			<LINK href="{URL}/Cont/Themes/braveblue/css/style.css" rel="stylesheet" type="text/css">
+			<SCRIPT  src ="{URL}/Cont/Themes/braveblue/js/jq.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/braveblue/js/js.js"></SCRIPT>
+			<SCRIPT  src ="{URL}/Cont/Themes/braveblue/js/bootstrap.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+	    <div id = "mywrap" style="width:1200px;margin:0 auto;">
+		    	<div class="navbar navbar-default">
+					  <div class="navbar-header">
+					    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					      <span class="icon-bar"></span>
+					    </button>
+					    <a class="navbar-brand" href="#">{TITLE}</a>
+					  </div>
+					  <div class="navbar-collapse collapse navbar-responsive-collapse">
+					    <ul class="nav navbar-nav">
+					      {NAVLINKS}	      
+					    </ul>
+					    <ul class="nav navbar-nav navbar-right">
+					      <li class="dropdown">
+					        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
+					        <ul class="dropdown-menu">
+					         {DROPMENU}
+					        </ul>
+					      </li>
+					    </ul>
+					  </div>
+					</div>
+
+			<div id="cont" style="float:left;width:900px;padding:25px">
+				{CONTENT}
+			</div>
+	    	<div id = "rightmenu" style ="float:right;width:300px">
+	    		{LOGIN}
+			</div>
+			<h6 class="text-muted">powered by pinoyitprogramsph.com</h6>
+	    </div>
+    </BODY>
+</HTML>

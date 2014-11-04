@@ -1,0 +1,113 @@
+<form class="form-horizontal" action = "{URL}/mbadmin/insert" method = "post">
+						  <fieldset>
+						    <legend>Add</legend><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Username</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="username" value="">							  
+							      </div>
+							    </div><div class="form-group">
+								       <label for="" class="col-lg-2 control-label">Password</label>
+								       <div class="col-lg-6">
+								         <input type="password" class="form-control" name="password" id="password" value="" >
+								       </div>
+								      </div>
+
+								     <div class="form-group">
+								       <label for="" class="col-lg-2 control-label">Retype Password</label>
+								       <div class="col-lg-6">
+								         <input type="password" class="form-control" name="repassword" id="repassword" value="" >
+								       </div>
+								     </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Firstname</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="firstname" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Middlename</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="middlename" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Lastname</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="lastname" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="select" class="col-lg-2 control-label">Confirmed</label>
+							        <div class="col-lg-6">
+							          <select class="form-control" id="select" name = "confirmed">
+							            <option value = "0">0</option>
+							            <option value = "1">1</option>
+							          </select>
+							        </div>
+							     </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Email</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="email" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Phone</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="phone" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Region</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="region" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">City</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="city" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Barangay</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="barangay" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Street</label>
+							      <div class="col-lg-6">
+							        <input type="text" class="form-control" name="street" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="select" class="col-lg-2 control-label">Status</label>
+							        <div class="col-lg-6">
+							          <select class="form-control" id="select" name = "status">
+							            <option value = "active">active</option>
+							            <option value = "inactive">inactive</option>
+							          </select>
+							        </div>
+							     </div><div class="form-group">
+							      <label for="" class="col-lg-2 control-label">Birthdate</label>
+							      <div class="col-lg-6">
+							        <input type="date" class="form-control" name="birthdate" value="">							  
+							      </div>
+							    </div><div class="form-group">
+							      <label for="select" class="col-lg-2 control-label">Photo</label>
+							        <div class="col-lg-6">
+							          <input type="text" class="form-control" name="photo" id="photo" value="">
+							         <button type="button" id="elearningphoto" class="btn btn-warning pull-right" style = "margin-top:20px">Upload</button>
+							          <img src = "" id="photoview" style="width:170px;height:200px;border:1pxs solid #dadada;margin-top:20px">
+							        </div>
+							     </div>
+						  <input type="hidden" class="form-control" name="method" value="{method}">
+						  
+						    <div class="form-group">
+						      <div class="col-lg-60 col-lg-offset-6">
+						        <a class="btn btn-default" href="{URL}/mbadmin/{method}">Cancel</a>
+						        <button type="submit" class="btn btn-primary" id="submitgen">Save</button>
+						      </div>
+						    </div> 
+						  </fieldset>
+						  </form>
+						  <script>
+						  	$("#elearningphoto").click(function() { 
+ 								
+						       	$("#dr").val("photos");
+						       	
+						        $("#upload").modal("show");
+						    });	
+						  </script>
+
+						  
